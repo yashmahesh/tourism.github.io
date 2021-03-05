@@ -1,0 +1,164 @@
+*{
+	margin:0; padding:0; box-sizing: border-box;
+	font-family: 'Josefin Sans', sans-serif;
+}
+header{
+	width: 100%; height:100vh;
+	background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)) ,url('photos/darjeeling.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	transition: 5s;
+
+	animation-name: animate;
+	animation-direction: alternate-reverse; ;
+	animation-duration:50s ;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	animation-play-state: running; ;
+	animation-timing-function: ease-in-out;
+}
+nav{
+	width:100%; height: 15vh;
+	background: rgba(0,0,0,0.2);
+	color: white; display: flex; justify-content: space-around;
+	align-items: center; text-transform: uppercase;
+	font-weight: bold;
+}
+nav .logo{
+	width: 25%; text-align: center;
+	font-size: 30px;
+	font-weight: bolder;
+	color: rgb(255,165,0);
+}
+nav .menu{
+	width:40%; 
+	display: flex; justify-content: space-around; 
+}
+nav .menu a:hover{
+	color: #00b894;
+}
+nav .menu a{
+	width: 25px;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+main{
+	width: 100%;
+	height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+section h3{
+    font-size: 35px; font-weight: bold; letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+
+}
+
+section h1{
+	margin: 20px 0 20px 0;
+	font-size: 55px;
+	font-weight: 700;
+	text-shadow: 2px 1px 5px black;
+	text-transform: uppercase;
+}
+
+section p{
+	font-size: 25px;
+	color: #eee;
+	word-spacing: 2px;
+	margin-bottom: 30px;
+	text-shadow: 1px 1px 1px black;
+}
+section a{
+	padding: 12px 30px;
+	border-radius: 4px;
+	outline: none;
+	text-transform: uppercase;
+	font-size: 13px
+	font-weight:500;
+	text-decoration: none;
+	letter-spacing: 1px;
+}
+section .registration{
+		background: #00b894;
+ 	color: white;
+}
+section .registration:hover{
+	color: black;
+	background: white;
+}
+section .btnone{
+ 	background: white;
+ 	color: black;
+ }
+ section .btnone:hover{
+	background: #00b894;
+}
+ section .btntwo{
+ 	background: #00b894;
+ 	color: white;
+ }
+  section .btntwo:hover{
+	color: black;
+	background: white;
+}
+.animate__heartBeat{
+	animation: none 1s infinite ;
+}
+ .change_content:after{
+ 	content: '';
+ 	animation: changetext 50s infinite linear;
+ 	
+ 	color: rgb(225,165,0);
+ }
+ 
+ @keyframes changetext{
+ 	0% { content: "Darjeeling"; }
+ 	10% { content: "Manali"; }
+    20% { content: "Agra"; }
+    30% { content: "Jaipur"; }
+    40% { content: "Keral"; }
+    50% { content: "Delhi"; }
+    60% { content: "Mumbai"; }
+    70% { content: "goa"; }
+    80% { content: "kedarnath"; }
+    90% { content: "ladakh"; }
+     100% { content: "kashmir"; }
+
+} 
+
+@keyframes animate {
+	0% { background-image: url(photos/darjeeling.jpg); }
+	10% { background-image: url(photos/manali.jpg); }
+	20% { background-image: url(photos/agra.jpg); }
+	30% { background-image: url(photos/jaipur.jpg); }
+	40% { background-image: url(photos/keral.jpg); }
+	50% { background-image: url(photos/delhi.jpg); }
+	60% { background-image: url(photos/mumbai.jpg); }
+	70% { background-image: url(photos/goa.jpg); }
+	80% { background-image: url(photos/kedarnath.jpg); }
+	90% { background-image: url(photos/ladakh.jpg); }
+	100% { background-image: url(photos/kashmir.jpg); }
+}
+ .copy-tag{
+	color: black;
+	text-align: center;
+	font-weight: bolder;
+}
+
+
+
+
+
+
+
+ 
+
+
+
